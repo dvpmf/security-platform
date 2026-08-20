@@ -34,6 +34,7 @@
 - 摄像头监控
 - 短信通知（模拟模式）
 
+```
 ## 项目结构
 
 ├── security-system/    # Spring Boot 后端
@@ -49,6 +50,7 @@
         ├── router/       # 路由
         ├── App.vue
         └── main.js
+```
 
 ## 环境要求
 
