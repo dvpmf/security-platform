@@ -36,20 +36,26 @@
 
 ```
 ## 项目结构
+## 项目结构
 
-├── security-system/    # Spring Boot 后端
+├── security-system/                          # Spring Boot 后端
 │   └── src/main/java/com/rongan/security_system/
+│       ├── SecuritySystemApplication.java   # 启动类
+│       ├── EmergencyPlanDataInitializer.java # 数据初始化器
 │       ├── config/       # 安全、跨域、WebSocket 配置
 │       ├── controller/   # 接口层
 │       ├── entity/       # 实体类
 │       ├── repository/   # 数据访问层（JPA）
 │       └── service/      # 业务逻辑层
-└── security-frontend/   # Vue3 前端
+│   └── src/main/resources/
+│       └── application.properties           # 数据库、端口、短信、AI 配置
+└── security-frontend/                       # Vue3 前端
     └── src/
+        ├── assets/       # 静态资源
         ├── components/   # 页面组件
         ├── router/       # 路由
-        ├── App.vue
-        └── main.js
+        ├── App.vue       # 根组件
+        └── main.js       # 入口文件
 ```
 
 ## 环境要求
